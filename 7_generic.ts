@@ -7,14 +7,3 @@ function reverse<T>(array: T[]): T[] {
 reverse(arrayOfNum)
 reverse(arrayOfStr)
 
-// ======================== //Дженерик тип для промиса
-
-let promise: Promise<number> = new Promise(resolve => {
-    setTimeout(() => {
-        resolve(42)
-    }, 2000)
-})
-
-promise.then(data => {
-    console.log(data.toFixed())
-})
